@@ -76,7 +76,7 @@
                               <v-card v-if="(i===1)">
                                  <h3 class="text-center">Market</h3>
                                  <v-text-field v-if="(i===1)" v-model="beadNew" name="beadNew" id="beadNew" text-align="center"label="Market Demand" hide-details="auto" filled shaped dense></v-text-field>
-                                 <p v-if="(i===1)" class="ml-3">><b>Input: {{ beadNew?beadNew:0 }}</b></p>
+                                 <p v-if="(i===1)" class="ml-3"><b>Input: {{ beadNew?beadNew:0 }}</b></p>
                               </v-card>
                               <v-card v-if="(i===2 || i===3)">
                                  <h3 class="text-center">Station {{i-1}}</h3>
