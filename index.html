@@ -49,11 +49,11 @@
                     
                     <v-card v-if="(i===2 || i===3 || i===4 || i===5 || i===6)">
                       <h3 class="text-center">Station {{i-1}}</h3>
-                      <v-text-field v-if="(i===2)" v-model="station1.capacity" name="station1" id="station1" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
-                      <v-text-field v-if="(i===3)" v-model="station2.capacity" name="station2" id="station2" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
-                      <v-text-field v-if="(i===4)" v-model="station3.capacity" name="station3" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
-                      <v-text-field v-if="(i===5)" v-model="station4.capacity" name="station4" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
-                      <v-text-field v-if="(i===6)" v-model="station5.capacity" name="station5" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
+                      <v-text-field v-if="(i===2)" v-model.number="station1.capacity" name="station1" id="stationX" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
+                      <v-text-field v-if="(i===3)" v-model.number="station2.capacity" name="station2" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
+                      <v-text-field v-if="(i===4)" v-model.number="station3.capacity" name="station3" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
+                      <v-text-field v-if="(i===5)" v-model.number="station4.capacity" name="station4" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
+                      <v-text-field v-if="(i===6)" v-model.number="station5.capacity" name="station5" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
                       <p v-if="(i===2)" class="ml-3"><b>Capacity: {{ station1.capacity }} </br> Incoming: {{ station1.win }} </br> Wip: {{ station1.wip }} </br> Outgoing: {{ station1.out }}</b></p>
                       <p v-if="(i===3)" class="ml-3"><b>Capacity: {{ station2.capacity }} </br> Incoming: {{ station2.win }} </br> Wip: {{ station2.wip }} </br> Outgoing: {{ station2.out }}</b></p>
                       <p v-if="(i===4)" class="ml-3"><b>Capacity: {{ station3.capacity }} </br> Incoming: {{ station3.win }} </br> Wip: {{ station3.wip }} </br> Outgoing: {{ station3.out }}</b></p>
