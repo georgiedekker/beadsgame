@@ -13,7 +13,7 @@
     <v-app>
       <v-main>
         <v-app-bar dense>
-      <v-app-bar-nav-icon href="https://www.reengineconsulting.com/" target="_blank"><v-img max-height="20" max-width="40" src="ReEngine_Logo_Web.png"></v-img></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon href="#"><v-img max-height="20" max-width="40" src="ReEngine_Logo_Web.png"></v-img></v-app-bar-nav-icon>
 
       <v-toolbar-title> <b>ReEngine Consuling</b> presents <b>{{ title }} </b></v-toolbar-title>
       
@@ -24,11 +24,7 @@
       <v-spacer></v-spacer><v-toolbar-title>{{ cycleCount }}</v-toolbar-title>
 
       <v-btn icon>
-        <v-icon>fas fa-tachometer-alt</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-domain</v-icon>
+        <v-icon href="https://www.reengineconsulting.com/" target="_blank">mdi-domain</v-icon>
       </v-btn>
 
       <v-btn icon>
@@ -58,11 +54,11 @@
                       <v-text-field v-if="(i===4)" v-model="station3.capacity" name="station3" text-align="center"label="Throughput" hide-details="auto" filled shaped dense></v-text-field>
                       <v-text-field v-if="(i===5)" v-model="station4.capacity" name="station4" text-align="center"label="Throughput" hide-details="auto" filled shaped dense></v-text-field>
                       <v-text-field v-if="(i===6)" v-model="station5.capacity" name="station5" text-align="center"label="Throughput" hide-details="auto" filled shaped dense></v-text-field>
-                      <p v-if="(i===2)" class="ml-3"><b>capacity {{ station1.capacity }} </br> in {{ station1.win }} </br> wip {{ station1.wip }} </br> out {{ station1.out }}</b></p>
-                      <p v-if="(i===3)" class="ml-3"><b>capacity {{ station2.capacity }} </br> in {{ station2.win }} </br> wip {{ station2.wip }} </br> out {{ station2.out }}</b></p>
-                      <p v-if="(i===4)" class="ml-3"><b>capacity {{ station3.capacity }} </br> in {{ station3.win }} </br> wip {{ station3.wip }} </br> out {{ station3.out }}</b></p>
-                      <p v-if="(i===5)" class="ml-3"><b>capacity {{ station4.capacity }} </br> in {{ station4.win }} </br> wip {{ station4.wip }} </br> out {{ station4.out }}</b></p>
-                      <p v-if="(i===6)" class="ml-3"><b>capacity {{ station5.capacity }} </br> in {{ station5.win }} </br> wip {{ station5.wip }} </br> out {{ station5.out }}</b></p>
+                      <p v-if="(i===2)" class="ml-3"><b>Capacity: {{ station1.capacity }} </br> Incoming: {{ station1.win }} </br> Wip: {{ station1.wip }} </br> Outgoing: {{ station1.out }}</b></p>
+                      <p v-if="(i===3)" class="ml-3"><b>Capacity: {{ station2.capacity }} </br> Incoming: {{ station2.win }} </br> Wip: {{ station2.wip }} </br> Outgoing: {{ station2.out }}</b></p>
+                      <p v-if="(i===4)" class="ml-3"><b>Capacity: {{ station3.capacity }} </br> Incoming: {{ station3.win }} </br> Wip: {{ station3.wip }} </br> Outgoing: {{ station3.out }}</b></p>
+                      <p v-if="(i===5)" class="ml-3"><b>Capacity: {{ station4.capacity }} </br> Incoming: {{ station4.win }} </br> Wip: {{ station4.wip }} </br> Outgoing: {{ station4.out }}</b></p>
+                      <p v-if="(i===6)" class="ml-3"><b>Capacity: {{ station5.capacity }} </br> Incoming: {{ station5.win }} </br> Wip: {{ station5.wip }} </br> Outgoing: {{ station5.out }}</b></p>
                     </v-card>
                       
 
@@ -93,7 +89,7 @@
         </v-container>
       </v-main>
       <v-footer fixed="fixed" app>
-      <span>&copy; 2020 - Made with 💙 by GD</span>
+      <span>&copy; 2020 - Made with 💙 by GD for <a href="https://www.reengineconsulting.com/" target="_blank">ReEngine Consulting</a></span>
     </v-footer>
     </v-app>
     </div>
