@@ -13,24 +13,22 @@
     <v-app>
       <v-main>
         <v-app-bar dense>
-      <v-app-bar-nav-icon href="#"><v-img max-height="20" max-width="40" src="ReEngine_Logo_Web.png"></v-img></v-app-bar-nav-icon>
-
-      <v-toolbar-title> <b>ReEngine Consuling</b> presents <b>{{ title }} </b></v-toolbar-title>
+          <v-app-bar-nav-icon href="#"><v-img max-height="20" max-width="40" src="ReEngine_Logo_Web.png"></v-img></v-app-bar-nav-icon>
+            <v-toolbar-title> <b>ReEngine Consuling</b> presents <b>{{ title }} </b></v-toolbar-title>
       
       <!-- <v-btn icon href="https://www.reengineconsulting.com/" target="_blank">
         <v-img max-height="20" max-width="40" src="ReEngine_Logo_Web.png"></v-img>
       </v-btn>
       <v-toolbar-title></v-toolbar-title> -->
-      <v-spacer></v-spacer><v-toolbar-title>{{ cycleCount }}</v-toolbar-title>
+            <v-spacer></v-spacer><v-toolbar-title>{{ cycleCount }}</v-toolbar-title>
+            <v-btn icon>
+              <v-icon href="https://www.reengineconsulting.com/" target="_blank">mdi-domain</v-icon>
+            </v-btn>
 
-      <v-btn icon>
-        <v-icon href="https://www.reengineconsulting.com/" target="_blank">mdi-domain</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </v-app-bar>
+            <v-btn icon>
+              <v-icon>mdi-dots-vertical</v-icon>
+            </v-btn>
+       </v-app-bar>
         <v-container fluid>
           <!-- <v-row :align="start"> -->
             <v-row>
@@ -75,18 +73,12 @@
               </v-col>
               </v-row>
               <v-col cols="12" hidden-md-and-down>
-              <v-row id="theWidth">
-              <div id="idnameofdiv"></div>
-            </v-row>
-            <!-- <v-col> -->
-              <!-- <v-row v-for="j in 10">
-              <v-col v-for="i in 7" outlined tile>
-              <p v-if="(i===2 || i===3 || i===4 || i===5 || i===6)" align="center">|  |</p>
+                <v-row id="theWidth" hidden-md-and-down>
+                <div id="idnameofdiv" hidden-md-and-down></div>
+                </v-row>
               </v-col>
-              </v-row> -->
-            </v-col>
-          </v-row>
-        </v-container>
+            </v-row>
+          </v-container>
       </v-main>
       <v-footer fixed="fixed" app>
       <span>&copy; 2020 - Made with 💙 by GD for <a href="https://www.reengineconsulting.com/" target="_blank">ReEngine Consulting</a></span>
