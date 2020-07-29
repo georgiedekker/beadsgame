@@ -32,7 +32,7 @@
         <v-container fluid>
           <!-- <v-row :align="start"> -->
             <v-row>
-          <v-col cols="2">
+          <v-col cols="2" class="hidden-md-and-down">
               <h3> Instructions</h3>
               <v-card>
                 <p class="mx-3">Fill out <b>Market Demand</b> and <b>Capacity</b> for all Stations and <b>click the Cycle Button</b> to step through the process. </p><p class="mx-3"><b>Click the Clear Button</b> to reset the game. </p><p class="mx-3">You are free to modify the <b>Capacity</b> during the game. </p><p class="mx-3">The Output will reset to 0 at 100 Beads. </p>
@@ -46,7 +46,7 @@
                 <v-col v-for="i in 7" outlined tile v-bind:key="i.text">
                     
                     <v-card v-if="(i===2 || i===3 || i===4 || i===5 || i===6)">
-                      <h3 class="text-center hidden-md-and-down">Station {{i-1}}</h3>
+                      <h3 class="text-center">Station {{i-1}}</h3>
                       <v-text-field v-if="(i===2)" v-model.number="station1.capacity" name="station1" text-align="center" label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
                       <v-text-field v-if="(i===3)" v-model.number="station2.capacity" name="station2" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
                       <v-text-field v-if="(i===4)" v-model.number="station3.capacity" name="station3" text-align="center"label="Capacity" hide-details="auto" filled shaped dense></v-text-field>
